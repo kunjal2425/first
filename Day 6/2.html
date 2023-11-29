@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Classifier</title>
+</head>
+<body>
+    <center>
+      <label for="">Enter the value</label>
+      <br><br>
+      <input type="number" name="" id="i" placeholder="Enter the value">
+      <h1 id="box1"></h1>
+    </center>
+    
+  </body>
+<script>
+    let age = document.getElementById("i").value
+if(age==""){
+    document.getElementById("box1").innerHTML=""+a;
+}
+else{
+    if (age < 18) {
+        document.getElementById("box1").innerHTML= "Minor:"+age;
+    } else if (age >= 18 && age < 65) {
+        document.getElementById("box1").innerHTML = "Adult:"+age;
+    } else {
+    document.getElementById("box1").innerHTML="Senior Citizen:"+age;
+    }
+}
+ 
+</script>
+
+</html>

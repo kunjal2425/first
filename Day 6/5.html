@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Classifier</title>
+</head>
+<body>
+    <center>
+      <label for="">Enter the value</label>
+      <br><br>
+      <input type="number" name="" id="i" placeholder="Enter the value">
+      <h1 id="box1"></h1>
+    </center>
+    
+  </body>
+<script>
+    let year = document.getElementById("i").value
+if(year==""){
+    document.getElementById("box1").innerHTML=""+year;
+}
+else{
+    if((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)){
+        document.getElementById("box1").innerHTML= "This is a leap year:"+year;
+    }
+ else {
+    document.getElementById("box1").innerHTML=" This is not a leap year:"+year;
+    }
+}
+ 
+</script>
+
+</html>

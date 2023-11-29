@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Classifier</title>
+</head>
+<body>
+    <center>
+      <label for="">Enter the value</label>
+      <br><br>
+      <input type="number" name="" id="i" placeholder="Enter the value">
+      <h1 id="box1"></h1>
+    </center>
+    
+  </body>
+<script>
+    let number = document.getElementById("i").value
+if(number==""){
+    document.getElementById("box1").innerHTML=""+number;
+}
+else{
+    if (number % 5 === 0 && number % 7 === 0){
+        document.getElementById("box1").innerHTML= "This is divisible by both 5 and 7:"+number;
+    }
+ else{
+    document.getElementById("box1").innerHTML=" This is no divisible by both 5 and 7:"+number;
+    }
+}
+ 
+</script>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowel Checker</title>
+</head>
+<body>
+
+<label for="i">Enter a character:</label>
+<input type="text" id="i">
+<h1 id="box1"></h1>
+
+<script>
+        let  character = document.getElementById("i").value;
+            if ((character >= 'a' && character <= 'z') ){
+                document.getElementById("box1").innerHTML=  " is a vowel:"+character;
+            } else if ((character >= 'A' && character <= 'Z')){
+                document.getElementById("box1").innerHTML=  " is not a vowel:"+character;
+            }
+         else {
+            document.getElementById("box1").innerHTML=   "Please enter a single alphabetical character:"+character;
+        }
+</script>
+
+</body>
+</html>
